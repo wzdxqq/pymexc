@@ -163,10 +163,10 @@ class _FuturesHTTP(MexcSDK):
         super().__init__(
             FUTURES, api_key=api_key, api_secret=api_secret, proxies=proxies
         )
-        if not ignore_ad:
-            print(
-                "[pymexc] You can bypass Futures API maintance. See https://github.com/makarworld/pymexc/issues/15 for more information."
-            )
+        # if not ignore_ad:
+        #     print(
+        #         "[pymexc] You can bypass Futures API maintance. See https://github.com/makarworld/pymexc/issues/15 for more information."
+        #     )
 
         self.session.headers.update(
             {"Content-Type": "application/json", "ApiKey": self.api_key}
