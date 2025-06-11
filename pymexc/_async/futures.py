@@ -40,8 +40,8 @@ import warnings
 logger = logging.getLogger(__name__)
 
 try:
-    from base import _FuturesHTTP
-    from base_websocket import FUTURES_PERSONAL_TOPICS, _FuturesWebSocket
+    from .base import _FuturesHTTP
+    from .base_websocket import FUTURES_PERSONAL_TOPICS, _FuturesWebSocket
 except ImportError:
     from pymexc._async.base import _FuturesHTTP
     from pymexc.base_websocket import FUTURES_PERSONAL_TOPICS, _FuturesWebSocket

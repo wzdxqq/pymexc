@@ -49,11 +49,8 @@ while True:
 import asyncio
 import os
 
-try:
-    from . import futures, spot
-except ImportError:
-    import _async.futures as futures
-    import _async.spot as spot
+
+from . import futures, spot
 
 
 if os.name == "nt":

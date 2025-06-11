@@ -48,14 +48,8 @@ while True:
 
 import logging
 
-try:
-    from . import _async, futures, spot, web, proto
-except ImportError:
-    import _async
-    import futures
-    import spot
-    import web
-    import proto
+
+from . import _async, futures, spot, web, proto
 
 logger = logging.getLogger(__name__)
 
